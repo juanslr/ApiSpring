@@ -49,6 +49,7 @@ public class ProductRest {
 	@PostMapping
 	public ResponseEntity<Product> createProduct(@RequestBody Product product){ //lo que venga en la peticion lo parseamos a tipo product
 		Product newProduct = productDAO.save(product);
+
 		return ResponseEntity.ok(newProduct);
 	}
 	

@@ -21,6 +21,17 @@ public class Product {
 	private String name;
 	
 	
+	@Column(name="puntos", nullable=false, length=10)
+	private String puntos;
+	
+	
+	
+	public String getPuntos() {
+		return puntos;
+	}
+	public void setPuntos(String puntos) {
+		this.puntos = puntos;
+	}
 	public Long getId() {
 		return id;
 	}
