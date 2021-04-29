@@ -1,9 +1,15 @@
 #Configuracion a la bae de datos
 #si al copiar y pegar tienes problemas ve escribiendolo con el autocompletado
 
-spring:  jpa:    hibernate:      ddl-auto: update #con esto los datos se genran de forma automatica apartir de la entidad
-    properties:      hibernate:
-      dialect: org.hibernate.dialect.MySQL5Dialect #lenguaje utilizado para convertir objetos en instrucciones SQL y al reves  datasource:    driver-class-name: com.mysql.jdbc.Driver
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update #con esto los datos se genran de forma automatica apartir de la entidad
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect #lenguaje utilizado para convertir objetos en instrucciones SQL y al reves
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/productos?zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
     username: root
-    password: JuanLora1958
+    password: *********
